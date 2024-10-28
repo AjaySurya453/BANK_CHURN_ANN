@@ -22,7 +22,7 @@ document.getElementById("churnForm").addEventListener("submit", async function(e
     };
 
     // Send data to the FastAPI backend
-    const response = await fetch("http://0.0.0.0:10000", {
+    const response = await fetch("https://bank-churn-ann.onrender.com/predict", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
