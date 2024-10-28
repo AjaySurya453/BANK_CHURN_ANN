@@ -22,7 +22,7 @@ document.getElementById("churnForm").addEventListener("submit", async function(e
     };
 
     // Send data to the FastAPI backend
-    const response = await fetch("http://localhost:8000/predict", {
+    const response = await fetch("http://0.0.0.0:10000", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
